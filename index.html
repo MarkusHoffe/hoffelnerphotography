@@ -349,7 +349,9 @@
       #philosophy { padding:72px 20px; }
       .phil-text blockquote { font-size:clamp(1.7rem,7vw,2.5rem); }
 
-      .photo-break { height:55vw; min-height:240px; }
+      /* Mobile: kein fixes Height → Bild zeigt sich vollständig */
+      .photo-break { height:auto; min-height:0; }
+      .photo-break img { max-height:none; width:100%; height:auto; }
 
       #portfolio { padding:64px 12px; }
       .portfolio-header { padding:0 8px; }
